@@ -1,0 +1,28 @@
+test_config:
+  base_url: "http://localhost:5000/api"
+  ui_url: "http://localhost:5000"
+  headers: {"Authorization": "Bearer testtoken"}
+  browser: "chrome"
+  headless: false
+  timeout: 10
+
+  test_users:
+    - name: "John Doe"
+      email: "john@example.com"
+      accountType: "premium"
+    - name: "Taylor Swift"
+      email: "taylor@example.com"
+      accountType: "premium"
+    - name: "Justin Bieber"
+      email: "justin@example.com"
+      accountType: "basic"
+
+  test_transactions:
+    - userId: "123"
+      amount: 100.50
+      type: "transfer"
+      recipientId: "456"
+    - userId: "124"
+      amount: 200.00
+      type: "payment"
+      recipientId: "457"
