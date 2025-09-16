@@ -12,5 +12,6 @@ To run the tests
 7. To run tests:
 8. ----- All tests - <code>pytest  --html=reports/report.html --self-contained-html  -v</code>
 9. ----- Specific test - <code>pytest  --html=reports/report.html --self-contained-html  -v -k test_create_user_invalid_account_type</code>
-10. Test reports after every run can be viewed in browser using - `<path_to_project>/reports/report.html`
-11. Screenshots for failing UI tests will be attached to the repor.html, or can be viewed under `screenshots` folder
+10. Both API test and UI test code are under `/tests/`
+11. Test reports after every run can be viewed in browser using - `<path_to_project>/reports/report.html`
+12. Screenshots for failing UI tests will be attached to the repor.html, or can be viewed under `screenshots` folder
